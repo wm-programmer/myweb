@@ -150,3 +150,9 @@
 
 
 }
+
+@media(max-width:950px){
+    .tarjeta a{
+        transform-origin: 10% 0;
+    }
+}

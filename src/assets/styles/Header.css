@@ -1,6 +1,5 @@
 /**topheader**/
 .topheader{
-
     left: 0px;
     top: 0px;
     width: 100%;
@@ -82,6 +81,7 @@
 .topheader{
     z-index: 2000;
 }
+
 
 /*------------------------Menu------------------------------*/
 .menu{
@@ -198,4 +198,20 @@
 }
 
   
+}
+
+@media(max-width:1024px){
+    .logo{
+        display: block;
+    }
+
+    .menu{
+        margin-right: 190px;
+    }
+}
+
+@media(max-width:425px){
+    .logo{
+        display: block;
+    }
 }
