@@ -14,7 +14,7 @@ html{
 }
 
 body{
-  background-color: #124f88;
+  background-color: white;
   font-family: 'Montserrat', sans-serif;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -25,4 +25,8 @@ body{
   margin: 0px;
   text-align: center;
 
+}
+
+a{
+  text-decoration: none;
 }

@@ -1,10 +1,23 @@
-.Header{
-    background-color: yellow;
-    padding: 0px 0px;
-    margin: 0 0;
+/**topheader**/
+.topheader{
+
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
 }
 
-/*---NavBar---*/
+/**topnav**/
+.topnav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+/*------------------------NavBar------------------------------*/
 /**Menu**/
 .menu{
     display: flex;
@@ -24,4 +37,165 @@
     line-height: 50px;
     text-transform: uppercase;
     position: relative;
+}
+
+.menu a::after{
+    content: "";
+    background-color: var(--secundary-color);
+    position: absolute;
+    left: 0;
+    top: calc(100% + 4px);
+    width: 100%;
+    height: 4px;
+    opacity: 0;
+
+}
+.menu a.selected::after,
+.menu a:hover::after{
+    opacity: 0.8;
+}
+.menu a:hover{
+    color: var(--primary-color)
+}
+
+.open-menu,
+.close-menu{
+    display: none;
+}
+/*------------------------Logo------------------------------*/
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.logo img{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/*-----------------------Disposito Movil-----------------------------*/
+@media(max-width:950px){
+
+.topheader{
+    z-index: 2000;
+}
+
+/*------------------------Menu------------------------------*/
+.menu{
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: var(--theme-color);
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    overflow-y: auto;
+    
+}
+
+.menu li{
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: 30px;
+    
+
+}
+/**Boton Hamburguesa**/
+.open-menu{
+    display: flex;
+    flex-direction: column;
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+    background: transparent;
+    gap: .65rem;
+    cursor: pointer;
+    padding: 10px 1px;
+}
+
+.open-menu > div{
+    background-color: var(--text-color-hamburguesa);
+    height: 2px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all 0.5s;
+    transform-origin: left ;
+}
+
+.open-menu:hover div:first-child{
+    transform: translateY(-5px);
+}
+
+.open-menu:hover div:last-child{
+    transform: translateY(5px);
+}
+/**Boton Close**/
+.close-menu{
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.close-menu{
+    align-self: flex-end;
+    padding: 20px 15px;
+}
+
+/*Funcion para que se ejecute el boton de abrir y cerrar el header*/
+.menu.open{
+    pointer-events: all;
+    opacity: 1;
+}
+
+/*Para que no se subraye con el tabulador*/
+.open-menu:focus:not(:focus-visible),
+.close-menu:focus:not(:focus-visible){
+    outline: none;
+}
+
+/** Estilo del menu header**/
+.menu a::after{
+    display: none;
+}
+
+
+.menu a{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: normal;
+    z-index: 1;
+}
+
+.menu a::before{ 
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    background-color: var(--primary-color);
+    top: -200%;
+    left: 0;
+    border-radius: 50%;
+    transition: all 1s ease;
+    z-index: -1;
+    
+}
+
+.menu a:hover::before{
+    top: 0;
+    border-radius: 0%;
+}
+
+.menu a:hover{
+    color: white;
+}
+
+  
 }
