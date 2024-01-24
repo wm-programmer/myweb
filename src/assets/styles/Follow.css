@@ -36,7 +36,7 @@
 .paginas{
     position: fixed;
     left: 0;
-    top: calc(50% -(165px / 2));
+    top: calc(50% - 55px);
     width: 55px;
     height: 165px;
 }
