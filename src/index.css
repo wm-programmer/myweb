@@ -16,7 +16,7 @@ html{
 body{
   background-color: white;
   font-family: 'Montserrat', sans-serif;
-  overflow-y: hidden;
+  /*overflow-y: hidden;*/
   overflow-x: hidden;
   position: absolute;
   width: 100%;

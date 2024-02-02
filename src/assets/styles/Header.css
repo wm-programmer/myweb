@@ -7,6 +7,16 @@
     z-index: 1000;
 }
 
+.topheader-about{
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 4px 5px var(--navbar-shallow-color);
+    background-color: white;
+    z-index: 100;
+}
+
 /**topnav**/
 .topnav{
     display: flex;

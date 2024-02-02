@@ -3,7 +3,7 @@ import '../styles/Header.css'
 import btn_cerrar from '../images/close-icon.svg'
 import { Link } from 'react-router-dom'
 
-export const NavBar = () =>{
+export const NavBarAbout = () =>{
     const [burgerActive, setBurgerActive] = useState(true)
 
     const toggleMenu = () => {
@@ -12,8 +12,7 @@ export const NavBar = () =>{
     return( 
         <>
         <button className={`open-menu ${burgerActive ? '' : 'hide'}`}
-        onClick={toggleMenu}>
-            {/* <img src={btn_abrir} alt="abrir menú" /> */}
+        onClick={toggleMenu} >
             <div></div>
             <div></div>
             <div></div>
