@@ -5,7 +5,7 @@ export const HeaderAbout = () =>{
     return( 
         <header className='topheader-about'>
             <nav className='topnav'>
-                <a href="#" className='logo'>
+                <a href="#" className='logo-about'>
                     <img src={logo} alt="perfil" 
                     height="50"
                     width="50"/>

@@ -2,6 +2,7 @@ import { HeaderAbout } from "../components/HeaderAbout"
 import { Profile } from "../components/Profile"
 import { Experiences } from "../components/Experiences"
 import { Skills } from "../components/Skills"
+import { Courses } from "../components/Courses"
 
 export const AboutPage = () =>{
     return (
@@ -11,6 +12,7 @@ export const AboutPage = () =>{
         <Profile/>
         <Experiences/>
         <Skills/>
+        <Courses/>
         </main>
         </>
       )

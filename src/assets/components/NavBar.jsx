@@ -26,9 +26,9 @@ export const NavBar = () =>{
                 <img src={btn_cerrar} alt="cerrar menú" />
              
             </button>
-            <li><Link to="/myweb/about" className='btn1'><span>About</span></Link></li>
+            <li><Link to="/myweb/about"><span>About</span></Link></li>
             <li><Link to="/myweb/portafolio"><span>Portafolio</span></Link></li>
-            <li><Link to="/myweb/laboratorios"><span>Laboratorios</span></Link></li>
+            {/* <li><Link to="/myweb/laboratorios"><span>Laboratorios</span></Link></li> */}
             <li><Link to="/myweb/contact"><span>Contacto</span></Link></li>
           
             

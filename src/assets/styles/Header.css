@@ -85,6 +85,19 @@
     margin-right: 10px;
 }
 
+.logo-about{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.logo-about img{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
 /*-----------------------Disposito Movil-----------------------------*/
 @media(max-width:950px){
 
