@@ -13,7 +13,7 @@ import { BrowserRouter, Route, Routes} from 'react-router-dom'
 export function App(){
   return(
     <main>
-    <BrowserRouter basename='/myweb'>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/about" element={<AboutPage/>}/>
