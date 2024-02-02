@@ -15,12 +15,12 @@ export function App(){
     <main>
     <BrowserRouter>
       <Routes>
-        <Route path="/myweb/" element={<HomePage/>}/>
-        <Route path='/myweb/about' element={<AboutPage/>}/>
+        <Route path="/myweb" element={<HomePage/>}/>
+        <Route path="/myweb/about" element={<AboutPage/>}/>
         {/* <Route path='/myweb/laboratorios' element={<LaboratoriosPage/>}/> */}
-        <Route path='/myweb/portafolio' element={<PortafolioPage/>}/>
-        <Route path='/myweb/contact' element={<ContactPage/>}/>
-        <Route path='*' element={<NotFoundPage/>}/>
+        <Route path="/myweb/portafolio" element={<PortafolioPage/>}/>
+        <Route path="/myweb/contact" element={<ContactPage/>}/>
+        <Route path="*" element={<NotFoundPage/>}/>
       </Routes>
     </BrowserRouter>
     </main>
