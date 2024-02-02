@@ -15,7 +15,7 @@ export function App(){
     <main>
     <BrowserRouter>
       <Routes>
-        <Route path="/myweb" element={<HomePage/>}/>
+        <Route path="/myweb/" element={<HomePage/>}/>
         <Route path='/myweb/about' element={<AboutPage/>}/>
         {/* <Route path='/myweb/laboratorios' element={<LaboratoriosPage/>}/> */}
         <Route path='/myweb/portafolio' element={<PortafolioPage/>}/>
