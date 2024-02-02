@@ -4,7 +4,7 @@ import './App.css'
 import { HomePage } from './assets/pages/HomePage'
 import { NotFoundPage } from './assets/pages/NotFoundPage'
 import { AboutPage } from './assets/pages/AboutPage'
-import { LaboratoriosPage } from './assets/pages/LaboratoriosPage'
+// import { LaboratoriosPage } from './assets/pages/LaboratoriosPage'
 import { PortafolioPage } from './assets/pages/PortafolioPage'
 import { ContactPage } from './assets/pages/ContactPage'
 // Rutas
@@ -15,9 +15,9 @@ export function App(){
     <main>
     <BrowserRouter>
       <Routes>
-        <Route path="/myweb/" element={<HomePage/>}/>
+        <Route path="/myweb" element={<HomePage/>}/>
         <Route path='/myweb/about' element={<AboutPage/>}/>
-        <Route path='/myweb/laboratorios' element={<LaboratoriosPage/>}/>
+        {/* <Route path='/myweb/laboratorios' element={<LaboratoriosPage/>}/> */}
         <Route path='/myweb/portafolio' element={<PortafolioPage/>}/>
         <Route path='/myweb/contact' element={<ContactPage/>}/>
         <Route path='*' element={<NotFoundPage/>}/>
