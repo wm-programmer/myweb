@@ -4,7 +4,10 @@ import wave from '../images/wave.svg'
 export const Courses = () => {
     return(
         <section className="courses" id="courses">
-        <img src={wave} alt="division" className="wave_course"/>
+        {/* <img src={wave} alt="division" className="wave_course"/> */}
+        <svg className="wave_course" viewBox="0 0 1400 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-15.0079 22.92C354.732 63.38 953.596 -55.05 1437.13 45.63L1400 55H6.55479e-05L-15.0079 22.92Z" fill="currentColor"/>
+        </svg>
         <div className="courses-body">
             <h2 className="courses-title">Cursos Complementarios</h2>
             <div className="courses-grid">
@@ -67,7 +70,10 @@ export const Courses = () => {
         </div>
 
 
-        <img src={wave} alt="division" className="wave_course wave_bottom_course"/>
+        {/* <img src={wave} alt="division" className="wave_course wave_bottom_course"/> */}
+        <svg className="wave_course wave_bottom_course" viewBox="0 0 1400 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M-15.0079 22.9 2C354.732 63.38 953.596 -55.05 1437.13 45.63L1400 55H6.55479e-05L-15.0079 22.92Z" fill="currentColor"/>
+            </svg>
 
     </section>
         

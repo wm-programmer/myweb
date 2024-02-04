@@ -6,9 +6,10 @@
     top: 0;
     width: 200px;
     height: 200px;
-    z-index: 2000;
+    z-index: 2000;/*parte azul*/
+
 }
-  
+
   /* Enlace dentro de la tarjeta */
 .tarjeta a {
     position: absolute;
@@ -17,8 +18,8 @@
     top: -30%;
     height: 44px;
     line-height: 47px;
-    background-color: #026ccf;
-    color: #f0f0f0;
+    background-color: #026ccf;/*Color de la etiqueta izquierda*/
+    color: #f0f0f0;/*Color de letra de la etiqueta*/
     cursor: pointer;
     text-transform: uppercase;
     font-size: 13px;
@@ -29,7 +30,7 @@
 }
 
 .tarjeta a:hover{
-    background-color: #0b5fad;
+    background-color: #0b5fad; /*Efecto de aclarar la etiqueta*/
     color: white;
 }
 /*-------------Paginas---------------------*/
@@ -48,7 +49,7 @@
 /*------------Follows----------*/
 /***Github***/
 .github{
-    background-color: #4e545a;
+    background-color: #4e545a;/*Color del git hub*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,7 +75,7 @@
 
 /**Linedin**/
 .linkedin{
-    background-color: #0e76a8;
+    background-color: #0e76a8;/*Color de linkedin*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,7 +102,7 @@
 @media(max-width:950px){
     /*Tarjeta Azul*/
 .tarjeta{
-    z-index: 1000;
+    z-index: 500;
 }
 
     /*Paginas*/

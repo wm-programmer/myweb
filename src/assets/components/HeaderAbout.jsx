@@ -1,6 +1,6 @@
 import '../styles/Header.css'
 import { NavBarAbout } from './NavBarAbout'
-import logo from '../images/perfil.jpg'
+import logo from '../images/perfil4.png'
 export const HeaderAbout = () =>{
     return( 
         <header className='topheader-about'>

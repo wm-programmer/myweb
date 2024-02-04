@@ -1,3 +1,4 @@
+
 /**topheader**/
 .topheader{
     left: 0px;
@@ -7,13 +8,20 @@
     z-index: 1000;
 }
 
+/*.page-content h1{
+    background-color: red;
+    width: 100%;
+    height: 100%;
+}*/
+
 .topheader-about{
     left: 0px;
     top: 0px;
     width: 100%;
     position: fixed;
-    box-shadow: 0 4px 5px var(--navbar-shallow-color);
-    background-color: white;
+    /*box-shadow: 0 4px 5px var(--navbar-shallow-color);*//*Color de la pagina about*/
+    box-shadow: var(--navbar-shadow);
+    background-color: var(--theme-color);
     z-index: 100;
 }
 
@@ -40,7 +48,7 @@
 }
 
 .menu a{
-    color: var(--text-color);
+    color: var(--text-color-hamburguesa-home);/*Color de la lista del header en el home*/
     font-size: 18px;
     font-weight: 500;
     line-height: 50px;
@@ -50,7 +58,7 @@
 
 .menu a::after{
     content: "";
-    background-color: var(--secundary-color);
+    background-color: var(--secundary-color-home);/*Color amarillo del subrayado de la lista header*/
     position: absolute;
     left: 0;
     top: calc(100% + 4px);
@@ -64,7 +72,8 @@
     opacity: 0.8;
 }
 .menu a:hover{
-    color: var(--primary-color)
+    /*color: var(--primary-color-home)*//*Color azul al pasar el mouse en la lista del header*/
+    color: var(--accent-color);/*Modo Oscuro*/
 }
 
 .open-menu,
@@ -77,12 +86,14 @@
     align-items: center;
     font-size: 18px;
     font-weight: 500;
-    color: var(--text-color);
+    color: var(--text-color-logo-home);
+    
 }
 
 .logo img{
     border-radius: 50%;
     margin-right: 10px;
+    background-color: white;
 }
 
 .logo-about{
@@ -90,19 +101,21 @@
     align-items: center;
     font-size: 18px;
     font-weight: 500;
-    color: var(--text-color);
+    /*color: var(--text-color-logo);*/
+    color: var(--accent-color);/*Modo Oscuro*/
 }
 
 .logo-about img{
     border-radius: 50%;
     margin-right: 10px;
+    background-color: white;
 }
 
 /*-----------------------Disposito Movil-----------------------------*/
 @media(max-width:950px){
 
 .topheader{
-    z-index: 2000;
+    z-index: 3000;
 }
 
 
@@ -114,7 +127,7 @@
     top: 0;
     width: 100%;
     align-items: center;
-    background-color: var(--theme-color);
+    background-color: var(--menu-mobile-background-color);
     height: 100%;
     opacity: 0;
     pointer-events: none;
@@ -144,7 +157,7 @@
 }
 
 .open-menu > div{
-    background-color: var(--text-color-hamburguesa);
+    background-color: var(--text-color-hamburguesa-home);
     height: 2px;
     width: 100%;
     border-radius: 5px;
@@ -191,6 +204,7 @@
 
 
 .menu a{
+    color: var(--text-color-hamburguesa);
     font-size: 25px;
     font-weight: 500;
     line-height: normal;
@@ -224,9 +238,9 @@
 }
 
 @media(max-width:1024px){
-    .logo{
+    /* .logo{
         display: block;
-    }
+    } */
 
     .menu{
         margin-right: 190px;

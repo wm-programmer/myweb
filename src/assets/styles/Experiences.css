@@ -11,7 +11,7 @@
     width: 100%;
     position: relative;
     top: 2px;
-
+    color: var(--primary-color)/*Modo oscuro*/;
 }
 
 .wave_bottom{
